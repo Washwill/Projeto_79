@@ -3,7 +3,7 @@ menuListArray = ["Pizza Vegetariana",
                     "Pizza Purtuguesa",
                     "Pizza Quatro Queijos",
                     "Pizza de Calabresa",
-                    "Pizza Extravaganza",];
+                    "Pizza Extravaganza"];
 
 function getMenu(){
     var htmldata="";
@@ -18,12 +18,12 @@ function getMenu(){
 
 function addItem(){
     var htmldata;
-    var imgtags='<img id="im1" src= pizzaImg.png>'
+    var imgtags='<img id="im1" src="pizzaImg.png"/>'
     var item=document.getElementById("addItem").value;
     menuListArray.sort();
-    var htmldata="";
+     htmldata="";
     for(var i=0;i<menuListArray.length;i++){
-        htmldata=htmldata + menuListArray[i] + '<br>'
+        htmldata=htmldata + imgtags + menuListArray[i] + '<br>'
     }
      document.getElementById("displayAddedMenu").innerHTML = htmldata;
 
